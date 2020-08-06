@@ -44,8 +44,9 @@ _Crea una nueva rama en el repositorio, con los archivos en el estado en el que 
 ``` 
   git checkout -b otrarama
 ``` 
+<br>
  ![Especificaciones-branch](/GitHub/git-branch.png)
-
+<br>
  _Borrar una rama de nuestro repositorio local_
  ```
   git branch -d "nombre_rama"
@@ -56,9 +57,9 @@ _En el caso de querer eliminar una rama del repositorio remoto_
  git push origin "nombre-rama"
   ```
 _Especificaciones push_
-
-![Especificaciones-push](git-push.png)
-
+<br>
+![Especificaciones-push](/GitHub/git-push.png)
+<brc>
 _Clona el repositiorio que haya en la url._
 ``` 
 git clone <url>  
