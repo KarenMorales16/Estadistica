@@ -44,6 +44,8 @@ _Crea una nueva rama en el repositorio, con los archivos en el estado en el que 
 ``` 
   git checkout -b otrarama
 ``` 
+ ![Especificaciones-branch](git-branch.png)
+
  _Borrar una rama de nuestro repositorio local_
  ```
   git branch -d "nombre_rama"
@@ -53,7 +55,9 @@ _En el caso de querer eliminar una rama del repositorio remoto_
  ```
  git push origin "nombre-rama"
   ```
-  
+_Especificaciones push_
+  ![Especificaciones-push](git-push.png)
+
 _Clona el repositiorio que haya en la url._
 ``` 
 git clone <url>  
@@ -69,10 +73,11 @@ _Trae los cambios de la rama mencionada a la rama en la que nos encontramos_
   git merge Unidad1
   git merge Unidad2
   git merge Unidad3
-``` 
+``
 
   
   ### Referencias
 - [markdown Github](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)
 - [markdown Github](https://gist.github.com/Villanuevand/6386899f70346d4580c723232524d35a)
 - [Comandos Git para consola](https://gist.github.com/mrcodedev/c234fd1aa2515008dd934ca8135cbfd2)
+
