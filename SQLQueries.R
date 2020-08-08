@@ -38,6 +38,10 @@ sqldf("select sepal_length,sepal_width,petal_length,petal_width, species from ir
 sqldf("select sepal_length,sepal_width,petal_length,petal_width, species from iris
       where sepal_width like '%4%'")
 
+### Selecionar los datos de cuyo sepal_length inicia con 5
+sqldf("select sepal_length,sepal_width,petal_length,petal_width, species from iris
+      where sepal_width like '%145%'")
+
 
 movies<- read.csv(file="/home/karen/Escritorio/Analytics/Recursos/P2-Movie-Ratings.csv")
 sqldf("SELECT * FROM iris")
