@@ -46,7 +46,7 @@ _Crea una nueva rama en el repositorio, con los archivos en el estado en el que 
 ``` 
 
 
- ![Especificaciones-branch](/GitHub/git-branch.png)
+ ![Especificaciones-branch](git-branch.png)
 
 
  _Borrar una rama de nuestro repositorio local_
@@ -59,7 +59,7 @@ _En el caso de querer eliminar una rama del repositorio remoto_
  git push origin "nombre-rama"
   ```
 
-![Especificaciones-push](/GitHub/git-push.png)
+![Especificaciones-push](git-push.png)
 
 
 _Clona el repositiorio que haya en la url._
