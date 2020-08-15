@@ -78,7 +78,26 @@ _Trae los cambios de la rama mencionada a la rama en la que nos encontramos_
   git merge Unidad2
   git merge Unidad3
 ``` 
+ ## GIT PULL Y  GIT FETCH
+_¿Cuál es la diferencia entre pull y fetch en git?_
+git pull es una abreviación de **git fetch** seguido de **git merge FETCH_HEAD.**
+_Es decir, git fetch trae los cambios, pero los deja en otro branch, hasta que se hace el git merge para traerlos al branch local._
 
+_Siempre en un repositorio tienes una rama oculta, que puedes ver al usar git branch -a_
+_Esa rama oculta es **origin/master.**_
+
+_Tú al usar git fetch, bajas los cambios del repositorio remoto a la rama origin/master **git fetch origin**_
+
+_Ahora ya tienes los cambios en origin/master, pero tendrías que pasarlos a la rama master, para eso tienes que usar: **git merge origin/master**_
+
+_A partir de esto tu tienes los nuevos cambios en tu rama master y listo._
+_Al usar git pull estas combinando git fetch+ git merge **git pull origin master**
+_En conclusión con git pull te estás ahorrando el usar un comando más, pero te recomiendo que si apenas estás empezando a usar git, sigas usando git fetch y git merge, El git pull simplemente es un git fecth + git merge. No utilizar el git pull si en realidad está dudoso de qué cambios puedan traerse del repositorio remoto._
+
+## GIT MERGE Y REBASE
+_En git existen dos formas que nos permiten unir ramas, git merge y git rebase. La forma mas conocida es git merge, la cual realiza una fusión a tres bandas entre las dos últimas instantáneas de cada rama y el ancestro común a ambas, creando un nuevo commit con los cambios mezclados.
+
+Git rebase básicamente lo que hace es recopilar uno a uno los cambios confirmados en una rama, y reaplicarlos sobre otra. Utilizar rebase nos puede ayudar a evitar conflictos siempre que se aplique sobre commits que están en local y no han sido subidos a ningún repositorio remoto. Si no tienen cuidado con esto último y algún compañero utiliza cambios afectados, seguro que tendrá problemas ya que este tipo de conflictos normalmente son difíciles de reparar.
   
   ### Referencias
 - [markdown Github](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)
