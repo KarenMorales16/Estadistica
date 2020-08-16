@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Una presentación garabatera al estilo de</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="R-Ladies Barranquilla" />
+    <link href="Rmarkdown_files/remark-css/default.css" rel="stylesheet" />
+    <link href="Rmarkdown_files/remark-css/rladies.css" rel="stylesheet" />
+    <link href="Rmarkdown_files/remark-css/rladies-fonts.css" rel="stylesheet" />
+    <script src="Rmarkdown_files/htmlwidgets/htmlwidgets.js"></script>
+    <script src="Rmarkdown_files/plotly-binding/plotly.js"></script>
+    <script src="Rmarkdown_files/typedarray/typedarray.min.js"></script>
+    <script src="Rmarkdown_files/jquery/jquery.min.js"></script>
+    <link href="Rmarkdown_files/crosstalk/css/crosstalk.css" rel="stylesheet" />
+    <script src="Rmarkdown_files/crosstalk/js/crosstalk.min.js"></script>
+    <link href="Rmarkdown_files/plotly-htmlwidgets-css/plotly-htmlwidgets.css" rel="stylesheet" />
+    <script src="Rmarkdown_files/plotly-main/plotly-latest.min.js"></script>
+    <link href="Rmarkdown_files/leaflet/leaflet.css" rel="stylesheet" />
+    <script src="Rmarkdown_files/leaflet/leaflet.js"></script>
+    <link href="Rmarkdown_files/leafletfix/leafletfix.css" rel="stylesheet" />
+    <script src="Rmarkdown_files/Proj4Leaflet/proj4-compressed.js"></script>
+    <script src="Rmarkdown_files/Proj4Leaflet/proj4leaflet.js"></script>
+    <link href="Rmarkdown_files/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+    <script src="Rmarkdown_files/leaflet-binding/leaflet.js"></script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Una presentación garabatera al estilo de
+### R-Ladies Barranquilla
+### 14/08/2020
+
+---
+
+
+
+
+background-image: url(http://3.bp.blogspot.com/-r6WGkE304iI/WgWv3gwhH-I/AAAAAAAAAu4/ogsNjtvVNmYCF1WRidlMAW51Pt-BWZEZACK4BGAYYCw/s1600/cumbia%2Bcolombiana.gif)
+background-position: 50% 50%
+class: center, inverse
+# ¿Cómo insertar un gif?
+---
+
+layout:true
+
+background-image: url(https://rladies.org/wp-content/uploads/2016/12/R-LadiesGlobal.png),url(Logo.png)
+background-position: 100% 0%, 0% 100%
+background-size: 10%, 9% 
+---
+# ¿Cómo insertar una imagen de internet?
+
+.center[
+![](http://www.crespial.org/mapapci/img/pictures/colombia/barranquilla1.jpg)
+]
+&lt;center&gt;
+&lt;b&gt;Barranquilla
+&lt;/b&gt;
+&lt;/center&gt;
+&lt;br/&gt;
+&lt;center&gt;
+Se baila al son de la cumbiamba,
+&lt;br/&gt;
+del garabato y las comparcitas.
+&lt;br/&gt;
+En la fiesta del Carnaval
+&lt;br/&gt;
+se alegra toda Barranquilla
+&lt;/center&gt;
+---
+layout:false
+
+#Doble columna 
+.pull-left[
+.center[
+![](negrita.jpg)
+
+]]
+
+.pull-right[
+&lt;div style="text-align: justify"&gt;
+La Negrita Puloy es el único símbolo femenino de las fiestas plenamente reconocido como tal. Este disfraz, en su aparente inocencia, trae consigo toda una historia de esclavitud, memoria de estereotipos propios de las comedias bufas cubanas y el minstrel show norteamericano. Solo que estas chicas no lo sabían mientras inventaban otra forma de hacer su carnaval.
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style="text-align: justify"&gt;
+Es como si la memoria cultural volviese disfrazada de otra manera a decirnos que miremos cómo nos comportamos aún en la actualidad cuando la «negrita» ya es otra forma de chica que ni barre ni trapea, pero que anda en tacones y con paraguas sexy.
+&lt;/div&gt;
+]
+---
+layout:true
+
+background-image: url(https://rladies.org/wp-content/uploads/2016/12/R-LadiesGlobal.png),url(Logo.png)
+background-position: 100% 0%, 0% 100%
+background-size: 10%, 9%
+---
+## Tablas
+
+```r
+library(knitr)
+knitr::kable(head(mtcars), format = "html")
+```
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; mpg &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; cyl &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; disp &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; hp &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; drat &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; wt &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; qsec &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; vs &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; am &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; gear &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; carb &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Mazda RX4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 21.0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 160 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.90 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.620 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 16.46 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Mazda RX4 Wag &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 21.0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 160 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.90 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.875 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 17.02 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Datsun 710 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 22.8 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 108 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 93 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.85 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.320 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 18.61 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Hornet 4 Drive &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 21.4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 258 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.08 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.215 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 19.44 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Hornet Sportabout &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 18.7 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 8 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 360 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 175 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.15 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.440 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 17.02 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Valiant &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 18.1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 225 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 105 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.76 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.460 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 20.22 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+---
+layout:true
+
+background-image: url(https://rladies.org/wp-content/uploads/2016/12/R-LadiesGlobal.png),url(Logo.png)
+background-position: 100% 0%, 0% 100%
+background-size: 10%, 9%
+---
+## Gráficos
+
+
+
+<div id="htmlwidget-aba037fae750ed68d0ff" style="width:100%;height:72%;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-aba037fae750ed68d0ff">{"x":{"visdat":{"1aed64e1061e":["function () ","plotlyVisDat"]},"cur_data":"1aed64e1061e","attrs":{"1aed64e1061e":{"y":{},"color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"box"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Ventas","xaxis":{"domain":[0,1],"automargin":true,"title":"Ciudad"},"yaxis":{"domain":[0,1],"automargin":true,"title":"Ventas por ciudad"},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"fillcolor":"rgba(102,194,165,0.5)","y":[109.2,150,130],"type":"box","name":"Aracataca","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"fillcolor":"rgba(228,156,113,0.5)","y":[92.9,100,150],"type":"box","name":"Barranquilla","marker":{"color":"rgba(228,156,113,1)","line":{"color":"rgba(228,156,113,1)"}},"line":{"color":"rgba(228,156,113,1)"},"xaxis":"x","yaxis":"y","frame":null},{"fillcolor":"rgba(201,152,157,0.5)","y":[102.6,70,60],"type":"box","name":"Cartagena","marker":{"color":"rgba(201,152,157,1)","line":{"color":"rgba(201,152,157,1)"}},"line":{"color":"rgba(201,152,157,1)"},"xaxis":"x","yaxis":"y","frame":null},{"fillcolor":"rgba(175,154,200,0.5)","y":[96.2,60,100.5],"type":"box","name":"Corozal","marker":{"color":"rgba(175,154,200,1)","line":{"color":"rgba(175,154,200,1)"}},"line":{"color":"rgba(175,154,200,1)"},"xaxis":"x","yaxis":"y","frame":null},{"fillcolor":"rgba(226,148,184,0.5)","y":[99.5,110,60],"type":"box","name":"Monteria","marker":{"color":"rgba(226,148,184,1)","line":{"color":"rgba(226,148,184,1)"}},"line":{"color":"rgba(226,148,184,1)"},"xaxis":"x","yaxis":"y","frame":null},{"fillcolor":"rgba(176,208,99,0.5)","y":[97.5,78.6,80],"type":"box","name":"Santa Marta","marker":{"color":"rgba(176,208,99,1)","line":{"color":"rgba(176,208,99,1)"}},"line":{"color":"rgba(176,208,99,1)"},"xaxis":"x","yaxis":"y","frame":null},{"fillcolor":"rgba(227,217,62,0.5)","y":[96.5,106,109],"type":"box","name":"Sincelejo","marker":{"color":"rgba(227,217,62,1)","line":{"color":"rgba(227,217,62,1)"}},"line":{"color":"rgba(227,217,62,1)"},"xaxis":"x","yaxis":"y","frame":null},{"fillcolor":"rgba(245,207,100,0.5)","y":[92.2,100,10.3],"type":"box","name":"Soledad","marker":{"color":"rgba(245,207,100,1)","line":{"color":"rgba(245,207,100,1)"}},"line":{"color":"rgba(245,207,100,1)"},"xaxis":"x","yaxis":"y","frame":null},{"fillcolor":"rgba(219,192,155,0.5)","y":[83.3,110,98.5],"type":"box","name":"Turbaco","marker":{"color":"rgba(219,192,155,1)","line":{"color":"rgba(219,192,155,1)"}},"line":{"color":"rgba(219,192,155,1)"},"xaxis":"x","yaxis":"y","frame":null},{"fillcolor":"rgba(179,179,179,0.5)","y":[90.5,99,104],"type":"box","name":"Valledupar","marker":{"color":"rgba(179,179,179,1)","line":{"color":"rgba(179,179,179,1)"}},"line":{"color":"rgba(179,179,179,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+
+---
+layout:true
+
+background-image: url(https://rladies.org/wp-content/uploads/2016/12/R-LadiesGlobal.png),url(Logo.png)
+background-position: 100% 0%, 0% 100%
+background-size: 10%, 9%
+---
+# Temas
+
+El formato xaringan::moon_reader tiene una  opción css, a la que puede pasar un vector de rutas de archivos CSS, **por ejemplo:**
+
+```yaml
+---
+output:
+  xaringan::moon_reader:
+    css: ["default", "extra.css"]
+---
+```
+
+Los usuarios han contribuido con algunos temas a xaringan . Por ejemplo, puede usar el tema metropolis.
+
+```yaml
+---
+output:
+  xaringan::moon_reader:
+    css: [default, metropolis, metropolis-fonts]
+---
+```
+---
+layout:true
+
+background-image: url(https://rladies.org/wp-content/uploads/2016/12/R-LadiesGlobal.png),url(Logo.png)
+background-position: 100% 0%, 0% 100%
+background-size: 10%, 9%
+
+---
+## Resumen y resaltado de código
+
+
+```r
+summary(cars)
+```
+
+```
+##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+```
+
+```r
+*mean(cars$speed)
+```
+
+```
+## [1] 15.4
+```
+
+```r
+*sd(cars$speed)
+```
+
+```
+## [1] 5.287644
+```
+
+---
+layout:true
+
+background-image: url(https://rladies.org/wp-content/uploads/2016/12/R-LadiesGlobal.png),url(Logo.png)
+background-position: 100% 0%, 0% 100%
+background-size: 10%, 8% 
+---
+## Mapa
+&lt;style&gt;
+.html-widget {
+    margin: auto;
+}
+&lt;/style&gt;
+
+```r
+library(leaflet)
+leaflet() %&gt;% addTiles() %&gt;% setView(lat=30.2621, lng=-97.7382, zoom = 17)
+```
+
+<div id="htmlwidget-c6ba0545e0e4600713be" style="width:100%;height:68%;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c6ba0545e0e4600713be">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[30.2621,-97.7382],17,[]]},"evals":[],"jsHooks":[]}</script>
+---
+layout: false
+
+class: center, middle, inverse
+#Muchas gracias
+---
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightLines": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

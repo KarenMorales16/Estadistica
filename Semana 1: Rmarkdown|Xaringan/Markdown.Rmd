@@ -1,0 +1,39 @@
+---
+title: "Markdown"
+author: "Rladies"
+date: "14/8/2020"
+output: html_document
+---
+*cursiva* **Negrita** ***cursiva y negrita***
+<!--include = FALSE
+#Hecho nos va mostrar las respuestas pero no el codigo
+#Message nos va mostrar los warning
+# error
+#results nos muestra la line de codigo pero no el informe  -->
+## Ejemplo 1
+
+```{r, f.aling="center", fig.width=8,  echo=FALSE}
+library(knitr)
+ knitr::kable(
+  mtcars[1:5, ],
+   caption =" Tabla 1"
+ )
+```
+
+##### **l**= izquierda 
+##### **r**=derecha
+##### **c**=centro
+```{r}
+iris <-head(iris)
+knitr::kable(iris,col.names = c(1,2,3,4,5),align = "lccrr",caption="table2")
+```
+
+## Ejemplo 2
+```{r}
+library(ggplot2)
+library(datos)
+ggplot(data = millas)+geom_point( mappin=aes( x= cilindrada, y=autopista,  color= clase))
+```
+
+
+

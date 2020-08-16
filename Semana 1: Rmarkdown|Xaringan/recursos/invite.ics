@@ -1,0 +1,82 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20200813T233000Z
+DTEND:20200814T013000Z
+DTSTAMP:20200812T220237Z
+ORGANIZER;CN=danissec@uninorte.edu.co:mailto:danissec@uninorte.edu.co
+UID:6hhjgd9o6dj32b9h6osj4b9kclgmab9o60q32b9j6gr3ip9m6ks34phg6o@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=Sebastian De Jesus Diaz Marquez;X-NUM-GUESTS=0:mailto:diazds@uninor
+ te.edu.co
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=Ines Maria Gamarra Santiz;X-NUM-GUESTS=0:mailto:isantiz@uninorte.ed
+ u.co
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;X-NUM-GUESTS=0:mailto:hernandezgabriela@uninorte.edu.co
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=Natalia Del Carmen Jimenez Ricardo;X-NUM-GUESTS=0:mailto:njimenezd@
+ uninorte.edu.co
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=Orianna Mireya Fontalvo Echavez;X-NUM-GUESTS=0:mailto:oriannaf@unin
+ orte.edu.co
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=danissec@uninorte.edu.co;X-NUM-GUESTS=0:mailto:danissec@uninorte.edu.co
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=Jairo Andres Castro Maestre;X-NUM-GUESTS=0:mailto:jairoac@uninorte.
+ edu.co
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=Carolina Maria Fontalvo Salas;X-NUM-GUESTS=0:mailto:salasmc@uninort
+ e.edu.co
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=Juan Camilo Torres Bovea;X-NUM-GUESTS=0:mailto:boveac@uninorte.edu.
+ co
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=Sergio Alfonso Rueda Astorga;X-NUM-GUESTS=0:mailto:sastorga@uninort
+ e.edu.co
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=Daniel Hernando Romero Rodriguez;X-NUM-GUESTS=0:mailto:hromero@unin
+ orte.edu.co
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=Laura Carolina Fuentes Quintero;X-NUM-GUESTS=0:mailto:lfuentesc@uni
+ norte.edu.co
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=Kelly Johana Carrascal Martinez;X-NUM-GUESTS=0:mailto:kjcarrascal@u
+ ninorte.edu.co
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=Brian Jesus Llinas Marimon;X-NUM-GUESTS=0:mailto:brianl@uninorte.ed
+ u.co
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=Cristiam David Bustos Fuentes;X-NUM-GUESTS=0:mailto:cristiamb@unino
+ rte.edu.co
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=karen.morales16@tectijuana.edu.mx;X-NUM-GUESTS=0:mailto:karen.moral
+ es16@tectijuana.edu.mx
+X-MICROSOFT-CDO-OWNERAPPTID:-857804992
+CREATED:20200812T220233Z
+DESCRIPTION:¡Hola! ✨\nSean todxs bienvenidxs a nuestra primera sesión intro
+ ductoria a la visualización de datos. 📊\nEn esta oportunidad trabajaremos 
+ con los paquetes ggplot2 y plotly. Te mostraremos sus principales funciones
+  y argumentos que permitirán que tus primeros pasos sean desarrollados exit
+ osamente. \n\n📌Importante:\n• Tener instalado RStudio en tu computador o c
+ ontar con RStudio Cloud (versión web).\n\n•Haber revisado previamente el ma
+ terial enviado (PDF y html)\n\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nNo edites esta sección de la d
+ escripción.\n\nEste evento tiene una videollamada.\nUnirse: https://meet.go
+ ogle.com/rkz-iypy-vdj\n\nVisualice el evento en la URL https://www.google.c
+ om/calendar/event?action=VIEW&eid=NmhoamdkOW82ZGozMmI5aDZvc2o0YjlrY2xnbWFiO
+ W82MHEzMmI5ajZncjNpcDltNmtzMzRwaGc2byBrYXJlbi5tb3JhbGVzMTZAdGVjdGlqdWFuYS5l
+ ZHUubXg&tok=MjQjZGFuaXNzZWNAdW5pbm9ydGUuZWR1LmNvM2UyZWY4M2NjNjE4MTMyYjY3YzV
+ iMmQ5ZjIxZDlmZjcyNWM0NzhmMg&ctz=America%2FTijuana&hl=es&es=1.\n-::~:~::~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20200812T220234Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Introducción a la visualización de datos en RStudio.
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

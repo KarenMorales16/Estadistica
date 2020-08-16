@@ -1,0 +1,15 @@
+---
+title: "Untitled"
+author: "Rladies"
+date: "14/8/2020"
+output: slidy_presentation
+xaringan ::moon_reader:
+css: ["default", "rldies", "rldies-fronts"]
+nature:
+  highlightLines: true
+---
+
+
+background-image: url("http://3.bp.blogspot.com/-r6WGkE304iI/WgWv3gwhH-I/AAAAAAAAAu4/ogsNjtvVNmYCF1WRidlMAW51Pt-BWZEZACK4BGAYYCw/s1600/cumbia%2Bcolombiana.gif")
+class: center, inverse
+background- position: 50% 50%
