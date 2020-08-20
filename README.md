@@ -104,5 +104,5 @@ Git rebase básicamente lo que hace es recopilar uno a uno los cambios confirmad
 - [markdown Github](https://gist.github.com/Villanuevand/6386899f70346d4580c723232524d35a)
 - [Comandos Git para consola](https://gist.github.com/mrcodedev/c234fd1aa2515008dd934ca8135cbfd2)
 - [Comandos Git para consola](https://www.solucionex.com/blog/git-merge-o-git-rebase)
-
+-https://slidesgo.com/es/tema/academia-de-idiomas
 
